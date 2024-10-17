@@ -2,6 +2,7 @@ import React from 'react'
 import { Filter } from '../Shared/Filter'
 import { DashboardCard } from '../lib/dv';
 import { Card } from '../Dashboard/Card';
+import { GetStarted } from './GetStarted';
 
 export const Incidents = () => {
   return (
@@ -19,6 +20,7 @@ export const Incidents = () => {
           ))}
         </div>
       </div>
+     <GetStarted/>
     </div>
   );
 }

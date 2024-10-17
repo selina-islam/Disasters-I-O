@@ -64,3 +64,22 @@ export const DashboardCard = [
     amount: "$1,456,654.00",
   },
 ];
+
+
+export const Stepbar = [
+  {
+    img: "/img/step-1.png",
+    title: "What type of incident?",
+    descriton: "Choose the category that best describes the incident.",
+  },
+  {
+    img: "/img/step-2.png",
+    title: "Tell us about the incident?",
+    descriton: "Choose the category that best describes the incident.",
+  },
+  {
+    img: "/img/step-3.png",
+    title: "Where did the incident occur?",
+    descriton: "Lorem ipsum dolar sit general sac mascho werho",
+  },
+];
