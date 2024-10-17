@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './Components/Shared/Navbar'
 import Dashboard from './Components/Dashboard/Dashboard';
+import { Incidents } from './Components/Incidents/Incidents';
 
 function App() {
   
@@ -12,7 +13,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Dashboard />} />
-          {/* <Route path='/incidents' element={<Incidents />} /> */}
+          <Route path='/Incidents' element={<Incidents />} />
         </Routes>
       </BrowserRouter>
     </>
