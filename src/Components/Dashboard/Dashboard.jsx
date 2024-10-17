@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Filter } from '../Shared/Filter'
+import { DashboardCard } from '../lib/dv';
+import { Card } from './Card';
+import { VscClose } from "react-icons/vsc";
 
 const Dashboard = () => {
+  const [chatopen, setChatopen] = useState(false)
+  const handleChat = () => {
+    setChatopen(!chatopen)
+  };
   return (
-    <div>Dashboard</div>
-  )
+    <>
+      <section className="flex flex-col  ">
+        <Filter
+          welcome="Welcome Back"
+          heading="Dashboard"
+          btntext="Cypher AI"
+        />
+
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 py-5 px-5 gap-3">
+          {DashboardCard.map((DashboardCard, i) => (
+            <Card key={i} {...DashboardCard} />
+          ))}
+        </div>
+      </section>
+
+      <button
+        className="bg-orange text-white font-bebasNeue size-[77px] text-[55px] rounded-full i flex justify-center items-center hover:cursor-pointer fixed z-[9999] right-0 bottom-0"
+        onClick={handleChat}
+      >
+        {chatopen ? <VscClose /> : "C"}
+      </button>
+    </>
+  );
 }
 
 export default Dashboard

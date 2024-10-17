@@ -1,11 +1,12 @@
 import React from 'react'
 import { CiSearch } from "react-icons/ci";
 import { Button } from '../Common/Button';
+import { Card } from '../Dashboard/Card';
 
 export const Filter = ({ welcome, heading, btntext }) => {
         return (
-          <section className="py-3 lg:py-6 bg-whiteLight">
-            <div className="flex md:flex-row flex-col justify-between items-center mx-20">
+          <section className="py-3 lg:py-6 bg-whiteLight ">
+            <div className="flex md:flex-row flex-col justify-between items-center mx-20 h-auto">
               <div className="text-graybold">
                 <p className="text-[12px]">{welcome}</p>
                 <h3 className="text-[26px] font-bold text-black">{heading}</h3>
@@ -32,11 +33,14 @@ export const Filter = ({ welcome, heading, btntext }) => {
                     </div>
                   </form>
                 </div>
+
+                
                 <div>
-                  <Button className="m-3">{btntext}</Button>
+                  <Button className="m-3 text-white">{ btntext}</Button>
                 </div>
               </div>
             </div>
+          
           </section>
         );
 }
