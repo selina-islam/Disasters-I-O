@@ -4,6 +4,7 @@ import { Navlist } from "../lib/dv";
 import { IoCloseOutline } from "react-icons/io5";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { MobileMenu } from './MobileMenu';
+import { Filter } from './Filter';
 
 
  const Navbar = () => {
@@ -68,7 +69,9 @@ import { MobileMenu } from './MobileMenu';
         </div>
       </nav>
       <MobileMenu toggle={toggle} handle={handle} />
+      <Filter/>
     </div>
+  
   );
 };
 
