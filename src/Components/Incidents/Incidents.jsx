@@ -1,8 +1,8 @@
 import React from 'react'
 import { Filter } from '../Shared/Filter'
-import { DashboardCard } from '../lib/dv';
+import { DashboardCard} from '../lib/dv';
 import { Card } from '../Dashboard/Card';
-import { GetStarted } from './GetStarted';
+
 
 export const Incidents = () => {
   return (
@@ -15,12 +15,13 @@ export const Incidents = () => {
         />
 
         <div className="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 py-5 px-5 gap-3">
-          {DashboardCard.map((DashboardCard, i) => (
-            <Card key={i} {...DashboardCard} />
+          {DashboardCard.map((dashboardCard, i) => (
+            <Card key={i} {...dashboardCard} />
           ))}
         </div>
       </div>
-     <GetStarted/>
+    
+    
     </div>
   );
 }

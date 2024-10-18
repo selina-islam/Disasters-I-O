@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Filter } from '../Shared/Filter'
-import { DashboardCard } from '../lib/dv';
+import { DashboardCard, NewInciidents } from '../lib/dv';
 import { Card } from './Card';
 import { VscClose } from "react-icons/vsc";
-import { Chatbox } from './Chatbox';
+import { Chatbox } from './Chatbox'; 
+import Location from '../Location/Location';
 
 const Dashboard = () => {
   const [chatopen, setChatopen] = useState(false)
@@ -12,7 +13,7 @@ const Dashboard = () => {
   };
   return (
     <>
-      <section className="flex flex-col font-oneset j">
+      <section className="flex flex-col font-oneset ">
         <Filter
           welcome="Welcome Back"
           heading="Dashboard"
@@ -31,7 +32,8 @@ const Dashboard = () => {
       >
         {chatopen ? <VscClose /> : "C"}
       </button>
-      <div className='fixed top-[20px] right-5'>{ chatopen ? <Chatbox/>:null}</div>
+      <div className='fixed top-[20px] right-5'>{chatopen ? <Chatbox /> : null}</div>
+   <Location/>
     </>
   );
 }

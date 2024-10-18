@@ -83,3 +83,158 @@ export const Stepbar = [
     descriton: "Lorem ipsum dolar sit general sac mascho werho",
   },
 ];
+
+export const NewInciidents = [
+  {
+    img: "/img/incident-1.png",
+    incident: "Avalanche",
+  },
+  {
+    img: "/img/incident-2.png",
+    incident: "Biological",
+  },
+  {
+    img: "/img/incident-3.png",
+    incident: "Blizzard",
+  },
+  {
+    img: "/img/incident-4.png",
+    incident: "Cold/Freezing",
+  },
+  {
+    img: "/img/incident-5.png",
+    incident: "Drought",
+  },
+  {
+    img: "/img/incident-6.png",
+    incident: "Earthquake",
+  },
+  {
+    img: "/img/incident-7.png",
+    incident: "Flooding",
+  },
+  {
+    img: "/img/incident-8.png",
+    incident: "Heat Wave",
+  },
+  {
+    img: "/img/incident-9.png",
+    incident: "Hail",
+  },
+  {
+    img: "/img/incident-10.png",
+    incident: "Lightning",
+  },
+  {
+    img: "/img/incident-11.png",
+    incident: "Tornado",
+  },
+  {
+    img: "/img/incident-12.png",
+    incident: "Mudslide",
+  },
+  {
+    img: "/img/incident-13.png",
+    incident: "Severe Storm",
+  },
+  {
+    img: "/img/incident-14.png",
+    incident: "Strong Wind",
+  },
+  {
+    img: "/img/incident-15.png",
+    incident: "Tornado",
+  },
+  {
+    img: "/img/incident-16.png",
+    incident: "Tsunami",
+  },
+  {
+    img: "/img/incident-17.png",
+    incident: "Volcanic Eruption",
+  },
+  {
+    img: "/img/incident-18.png",
+    incident: "Wildfire",
+  },
+];
+
+
+
+export const LocationData = [
+  {
+    img: "/img/Location-1.png",
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    amount: "$1,456,654.00",
+  },
+  {
+    img: "/img/Location-2.png",
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    amount: "$1,456,654.00",
+  },
+  {
+    img: "/img/Location-1.png",
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    amount: "$1,456,654.00",
+  },
+  {
+    img: "/img/Location-1.png",
+    title: "Whitechapel Rd.",
+    description: "Tulare County,  Los Angles, CA 23415",
+    amount: "$1,456,654.00",
+  },
+];
+
+export const locationHead = [
+  {
+    img: "/img/location.png",
+    name: "Location",
+    ammount: "Tulare County,  Los Angles, CA 23415",
+  },
+  {
+    img: "/img/approx.png",
+    name: "Approx. Cost:",
+    ammount: "$60,607,456.00",
+  },
+];
+
+export const locationActivity = [
+  {
+    img: "/img/House.png",
+    title: "Activity name",
+    des: "Location name",
+    location: "16.12212, -122.1424",
+    amount: "$1,456,654.00",
+  },
+  {
+    img: "/img/House.png",
+    title: "Activity name",
+    des: "Location name",
+    location: "16.12212, -122.1424",
+    amount: "$1,456,654.00",
+  },
+];
+
+
+
+export const locationDocument = [
+  {
+    img: "/img/House.png",
+    title: "Document name",
+    des: "Location name",
+    location: "16.12212, -122.1424",
+    amount: "$1,456,654.00",
+  },
+  {
+    img: "/img/House.png",
+    title: "Document name",
+    des: "Location name",
+    location: "16.12212, -122.1424",
+    amount: "$1,456,654.00",
+  },
+];
+
+
