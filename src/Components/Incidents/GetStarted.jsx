@@ -2,9 +2,11 @@ import React from 'react'
 import { Stepbar } from '../lib/dv';
 import { GetCard } from './GetCard';
 import { Button } from '../Common/Button';
+import { useNavigate } from 'react-router-dom';
 
 
 export const GetStarted = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <div className="flex flex-col justify-center items-center">

@@ -5,6 +5,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import { Incidents } from './Components/Incidents/Incidents';
 import Location from './Components/FullLocation/Location';
 
+
 function App() {
   
 
@@ -15,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/Incidents" element={<Incidents />} />
-          <Route path="/Locations" element={ <Location/>} />
+          <Route path="/Locations" element={<Location />} />
         </Routes>
       </BrowserRouter>
     </>
