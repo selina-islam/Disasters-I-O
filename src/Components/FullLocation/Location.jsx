@@ -19,8 +19,8 @@ const Location = () => {
           img="/img/tree.png"
         />
       </div>
-      <div className="gap-3 mx-14 flex  md:flex-row  ">
-        <div className=" h-[1582px] w-[680px] justify-start items-center">
+      <div className="gap-3 grid lg:grid-cols-2 grid-cols-1 justify-center items-start">
+        <div className="flex flex-col justify-start md:ms-5 ms-0 items-start gap-3 md:w-1/2 w-full">
           <div>
             <div className="flex flex-col justify-start items-start">
               {locationHead.map((s, i) => (
@@ -29,9 +29,9 @@ const Location = () => {
             </div>
           </div>
 
-          <div className="border-b-2 border-t-2 py-9">
+          <div className="border-b-2 border-t-2 py-9 mx-3">
             <h4 className="text-[14px] font-bold text-black">Description</h4>
-            <p className="text-[16px] text-graybold w-[677px]">
+            <p className="text-[16px] text-graybold lg:w-[677px]">
               Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar
               sit general sac mascho werhoLorem ipsum dolar sit general sac
               mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem
@@ -40,7 +40,7 @@ const Location = () => {
             </p>
           </div>
 
-          <div>
+          <div className="mx-auto">
             <div className="flex justify-between">
               <p className="text-[14px] font-bold">Locations</p>
               <p className="text-graybold underline text-[14px]">See all</p>
@@ -51,39 +51,50 @@ const Location = () => {
               ))}
             </div>
           </div>
+          <hr className="w-full bg-gray-200 my-7" />
+
+          <hr className="w-full bg-gray-200 my-7" />
 
           {/* Activity section */}
-          <div className="gap-3 py-5 ">
-            <div className="flex justify-between">
-              <p className="text-[14px] font-bold">Documents</p>
-              <p className="text-[14px] text-gra underline">See all</p>
-            </div>
-            {locationActivity.map((o, i) => (
-              <ThreeCard key={i} {...o} />
-            ))}
-          </div>
-
-          {/* document section */}
-          <div>
-            <div className="flex justify-between">
+          <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto ">
+            <div className="flex md:justify-between justify-around">
               <p className="text-[14px] font-bold">Activity</p>
               <p className="text-[14px] text-gra underline">See all</p>
             </div>
-            <div>
+            <div className="space-y-4">
               {locationDocument.map((z, i) => (
-                <FourCard key={i} {...z} />
+                <FourCard
+                  className={"md:w-full w-[95%] mx-auto"}
+                  key={i}
+                  {...z}
+                />
+              ))}
+            </div>
+          </div>
+          {/* document section */}
+          <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto">
+            <div className="flex md:justify-between justify-around">
+              <p className="text-[14px] font-bold">Documents</p>
+              <p className="text-[14px] text-gra underline">See all</p>
+            </div>
+            <div className="space-y-4">
+              {locationActivity.map((o, i) => (
+                <ThreeCard
+                  className={"md:w-full w-[95%] mx-auto"}
+                  key={i}
+                  {...o}
+                />
               ))}
             </div>
           </div>
         </div>
-        <div>
-          <div className="w-[526px] h-[563px] mr-14">
-            <p className="p-1 text-graybold">Incident Map</p>
-            <img src="/img/location-map.png" alt="" />
-            <p className="p-1 text-graybold">
-              Start 19.1232, -118.233 End 19.3245, -119.2323
-            </p>
-          </div>
+
+        <div className="md:w-1/2 ms-5 w-[90%] flex flex-col justify-center items-start">
+          <p className="p-1 text-graybold">Incident Map</p>
+          <img src="/img/location-map.png" alt="" />
+          <p className="p-1 text-graybold">
+            Start 19.1232, -118.233 End 19.3245, -119.2323
+          </p>
         </div>
       </div>
     </section>

@@ -1,8 +1,9 @@
 import React from 'react'
+import { cn } from '../lib/utils/cn';
 
-export const FourCard = ({ img, title, location, des, amount }) => {
+export const FourCard = ({ img, title, location, des, amount , className}) => {
   return (
-    <div className="h-[256px] w-[679px] ">
+    <div className={cn(" lg:w-[679px] md:w-[550px] w-[400px]",className )}>
      
       <div className=" bg-gray-300 flex justify-start items-center py-5 px-3 rounded-[10px]">
         <div>
