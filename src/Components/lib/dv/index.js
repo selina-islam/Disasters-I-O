@@ -192,12 +192,12 @@ export const locationHead = [
   {
     img: "/img/location.png",
     name: "Location",
-    ammount: "Tulare County,  Los Angles, CA 23415",
+    amount: "Tulare County,  Los Angles, CA 23415",
   },
   {
     img: "/img/approx.png",
     name: "Approx. Cost:",
-    ammount: "$60,607,456.00",
+    amount: "$60,607,456.00",
   },
 ];
 

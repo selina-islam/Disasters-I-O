@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import { Filter } from '../Shared/Filter'
-import { DashboardCard, NewInciidents } from '../lib/dv';
-import { Card } from './Card';
+import React, { useState } from "react";
+import { Filter } from "../Shared/Filter";
+import { DashboardCard, NewInciidents } from "../lib/dv";
+import { Card } from "./Card";
 import { VscClose } from "react-icons/vsc";
-import { Chatbox } from './Chatbox'; 
-import Location from '../Location/Location';
+import { Chatbox } from "./Chatbox";
+
 
 const Dashboard = () => {
-  const [chatopen, setChatopen] = useState(false)
+  const [chatopen, setChatopen] = useState(false);
   const handleChat = () => {
-    setChatopen(!chatopen)
+    setChatopen(!chatopen);
   };
   return (
     <>
@@ -28,14 +28,17 @@ const Dashboard = () => {
       </section>
 
       <button
-        className="bg-orange text-white font-bebasNeue md:size-[77px] md:text-[55px] text-[35px]  rounded-full i flex justify-center items-center hover:cursor-pointer fixed z-[9999] right-0 bottom-0 size:[50px]" onClick={handleChat}
+        className="bg-orange text-white font-bebasNeue md:size-[77px] md:text-[55px] text-[35px]  rounded-full i flex justify-center items-center hover:cursor-pointer fixed z-[9999] right-0 bottom-0 size:[50px]"
+        onClick={handleChat}
       >
         {chatopen ? <VscClose /> : "C"}
       </button>
-      <div className='fixed top-[20px] right-5'>{chatopen ? <Chatbox /> : null}</div>
-   <Location/>
+      <div className="fixed top-[20px] right-5">
+        {chatopen ? <Chatbox /> : null}
+      </div>
+     
     </>
   );
-}
+};
 
-export default Dashboard
+export default Dashboard;

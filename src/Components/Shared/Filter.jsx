@@ -17,7 +17,7 @@ export const Filter = ({ welcome, heading, btntext, img, className }) => {
                     img && "flex justify-center items-center gap-3",
                     className
                   )}
-                ><img src={img} alt='img' />
+                ><img src={img}/>
                   {heading}
                 </h3>
 
