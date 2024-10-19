@@ -3,8 +3,18 @@ import { CiSearch } from "react-icons/ci";
 import { Button } from '../Common/Button';
 import { Card } from '../Dashboard/Card';
 import { cn } from '../lib/utils/cn';
+import { useNavigate } from 'react-router-dom';
 
 export const Filter = ({ welcome, heading, btntext, img, className }) => {
+  const navigate =useNavigate()
+  const handleClick= ()=> {
+    if (btntext === "+New Incident") {
+      navigate("/Incidents/GetStarted");
+    } else {
+      return null
+    }
+    
+  }
         return (
           <section className="py-3 lg:py-6 bg-whiteLight ">
             <div className="flex md:flex-row flex-col justify-between items-center mx-20 h-auto">
@@ -46,7 +56,7 @@ export const Filter = ({ welcome, heading, btntext, img, className }) => {
                 </div>
 
                 <div>
-                  <Button className="m-3 text-white">{btntext}</Button>
+                  <Button onClick={handleClick} className="m-3 text-white">{btntext}</Button>
                 </div>
               </div>
             </div>

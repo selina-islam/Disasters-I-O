@@ -2,7 +2,7 @@ import React from 'react'
 
 export const TwoCard = ({img, title, description, amount}) => {
   return (
-    <div className="flex flex-col  w-[214px] h-[241px] py-2 mb-5">
+    <div className="w-[400px] flex flex-col py-2 mb-5 px-2">
       <div>
         <img src={img} alt="" className="h-[178px] w-[214px]" />
       </div>

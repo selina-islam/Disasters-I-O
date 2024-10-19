@@ -1,7 +1,8 @@
 import React from 'react'
 import { Button } from '../Common/Button';
 
-export const NewIndas = ({btntext, backbtn, welcome, heading}) => {
+export const NewIndas = ({ btntext, backbtn, welcome, heading,back, next }) => {
+  
   return (
     <section className="bg-whiteLight lg:py-y py-3">
       <div className="flex md:flex-row flex-col justify-between items-center mx-2 gap-3">
@@ -22,12 +23,12 @@ export const NewIndas = ({btntext, backbtn, welcome, heading}) => {
         </div>
         <div className="flex gap-3">
           <div>
-            <Button className="mx-auto text-graybold me-3 bg-[#FAFAFA] border-[#D4D4D8]">
+            <Button onClick={back} className="mx-auto text-graybold me-3 bg-[#FAFAFA] border-[#D4D4D8]">
               {backbtn}
             </Button>
           </div>
           <div>
-            <Button>{btntext}</Button>
+            <Button onClick={next}>{btntext}</Button>
           </div>
         </div>
       </div>

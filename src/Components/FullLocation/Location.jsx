@@ -19,72 +19,77 @@ const Location = () => {
           img="/img/tree.png"
         />
       </div>
-      <div className="gap-3 grid lg:grid-cols-2 grid-cols-1 justify-center items-start">
+      <div className="gap-3 grid lg:grid-cols-2 grid-cols-1 justify-center items-start w-full">
         <div className="flex flex-col justify-start md:ms-5 ms-0 items-start gap-3 md:w-1/2 w-full">
-          <div>
-            <div className="flex flex-col justify-start items-start">
-              {locationHead.map((s, i) => (
-                <OneCard key={i} {...s} />
-              ))}
+          <div className="w-full">
+            <div>
+              <div className="flex flex-col justify-start items-start">
+                {locationHead.map((s, i) => (
+                  <OneCard key={i} {...s} />
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="border-b-2 border-t-2 py-9 mx-3">
-            <h4 className="text-[14px] font-bold text-black">Description</h4>
-            <p className="text-[16px] text-graybold lg:w-[677px]">
-              Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar
-              sit general sac mascho werhoLorem ipsum dolar sit general sac
-              mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem
-              ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit
-              general sac mascho werho
-            </p>
-          </div>
+            <div className="border-b-2 border-t-2 py-9 mx-3">
+              <h4 className="text-[14px] font-bold text-black">Description</h4>
+              <p className="text-[16px] text-graybold lg:w-[677px]">
+                Lorem ipsum dolar sit general sac mascho werhoLorem ipsum dolar
+                sit general sac mascho werhoLorem ipsum dolar sit general sac
+                mascho werhoLorem ipsum dolar sit general sac mascho werhoLorem
+                ipsum dolar sit general sac mascho werhoLorem ipsum dolar sit
+                general sac mascho werho
+              </p>
+            </div>
 
-          <div className="mx-auto">
-            <div className="flex justify-between">
-              <p className="text-[14px] font-bold">Locations</p>
-              <p className="text-graybold underline text-[14px]">See all</p>
-            </div>
-            <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-3">
-              {LocationData.map((s, i) => (
-                <TwoCard key={i} {...s} />
-              ))}
-            </div>
-          </div>
-          <hr className="w-full bg-gray-200 my-7" />
+            <div className="w-full">
+              <div className="w-full mx-auto">
+                <div className="flex justify-between">
+                  <p className="text-[14px] font-bold">Locations</p>
+                  <p className="text-graybold underline text-[14px]">See all</p>
+                </div>
+                <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto">
+                  {LocationData.map((s, i) => (
+                    <TwoCard key={i} {...s} />
+                  ))}
+                </div>
+              </div>
 
-          <hr className="w-full bg-gray-200 my-7" />
+              <hr className="w-full bg-gray-200 my-7" />
 
-          {/* Activity section */}
-          <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto ">
-            <div className="flex md:justify-between justify-around">
-              <p className="text-[14px] font-bold">Activity</p>
-              <p className="text-[14px] text-gra underline">See all</p>
-            </div>
-            <div className="space-y-4">
-              {locationDocument.map((z, i) => (
-                <FourCard
-                  className={"md:w-full w-[95%] mx-auto"}
-                  key={i}
-                  {...z}
-                />
-              ))}
-            </div>
-          </div>
-          {/* document section */}
-          <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto">
-            <div className="flex md:justify-between justify-around">
-              <p className="text-[14px] font-bold">Documents</p>
-              <p className="text-[14px] text-gra underline">See all</p>
-            </div>
-            <div className="space-y-4">
-              {locationActivity.map((o, i) => (
-                <ThreeCard
-                  className={"md:w-full w-[95%] mx-auto"}
-                  key={i}
-                  {...o}
-                />
-              ))}
+              <hr className="w-full bg-gray-200 my-7" />
+
+              {/* Activity section */}
+              <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto ">
+                <div className="flex md:justify-between justify-around">
+                  <p className="text-[14px] font-bold">Activity</p>
+                  <p className="text-[14px] text-gra underline">See all</p>
+                </div>
+                <div className="space-y-4">
+                  {locationDocument.map((z, i) => (
+                    <FourCard
+                      className={"md:w-full w-[95%] mx-auto"}
+                      key={i}
+                      {...z}
+                    />
+                  ))}
+                </div>
+              </div>
+              {/* document section */}
+              <div className="gap-3 py-5 md:mx-0 md:w-full w-[95%] mx-auto">
+                <div className="flex md:justify-between justify-around">
+                  <p className="text-[14px] font-bold">Documents</p>
+                  <p className="text-[14px] text-gra underline">See all</p>
+                </div>
+                <div className="space-y-4">
+                  {locationActivity.map((o, i) => (
+                    <ThreeCard
+                      className={"md:w-full w-[95%] mx-auto"}
+                      key={i}
+                      {...o}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

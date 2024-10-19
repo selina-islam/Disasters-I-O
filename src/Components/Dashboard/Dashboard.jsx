@@ -4,7 +4,7 @@ import { DashboardCard, NewInciidents } from "../lib/dv";
 import { Card } from "./Card";
 import { VscClose } from "react-icons/vsc";
 import { Chatbox } from "./Chatbox";
-import Which from "../Incidents/Which";
+
 
 
 
@@ -38,7 +38,7 @@ const Dashboard = () => {
       <div className="fixed top-[20px] right-5">
         {chatopen ? <Chatbox /> : null}
       </div>
-    <Which/>
+  
     </>
   );
 };
