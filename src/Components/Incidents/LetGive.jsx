@@ -20,7 +20,7 @@ export const LetGive = () => {
         next={funfornext}
         backbtn="Back"
       />
-      <div className="flex flex-col justify-center items-center gap-6 mt-6">
+      <div className="flex flex-col justify-center items-center gap-6 mt-6 ">
         <div className=" w-[95%] md:w-1/2 mx-auto ">
           <h1 className="text-[24px] text-black font-bold">
             Let’s give the incident a title?
@@ -32,7 +32,7 @@ export const LetGive = () => {
           <input
             type="text"
             placeholder="Add title here"
-            className="bg-whiteLight border border-gray-300 px-6 py-4 rounded-lg w-full focus:outline-none focus:shadow-inner focus:shadow-green-300 transition-all duration-300 text-12"
+            className="bg-[#F4F4F5] border border-gray-300 px-6 py-4 rounded-lg w-full focus:outline-none focus:shadow-inner focus:shadow-green-300 transition-all duration-300 text-12"
           />
         </div>
 
@@ -47,7 +47,7 @@ export const LetGive = () => {
             name=""
             placeholder="Type here"
             id=""
-            className="bg-[#F4F4F5] rounded-[6px] h-[127px] w-[100%] "
+            className="bg-[#F4F4F5] border border-gray-300 rounded-[6px] h-[127px] mt-1 w-[100%] "
           ></textarea>
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from 'react'
 export const GetCard = ({ img, title, descriton }) => {
   return (
     <div>
-      <div className="bg-whiteLight text-graybold rounded-[10px] h-[269px] w-[235px] shadow-sm shadow-slate-300 gap-3">
+      <div className="bg-whiteLight text-graybold rounded-[10px] h-[269px] w-[235px] shadow-sm shadow-slate-300 gap-3 hover:shadow-lg hover:scale-105 transition-transform duration-300">
         <div>
           <div className="mb-16 px-2 py-3">
             <img src={img} alt="" />

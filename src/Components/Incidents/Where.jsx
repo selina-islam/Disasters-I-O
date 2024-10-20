@@ -22,7 +22,7 @@ const funfornext = () => {
         next={funfornext}
         backbtn="Back"
       />
-      <div className="h-[589px] w-[752px] gap-24">
+      <div className="h-[589px] w-[752px]  flex flex-col justify-center mx-auto mt-3">
         <div>
           <h1 className="text-[24px] text-black font-bold">
             Where’s the incident?

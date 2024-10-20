@@ -12,7 +12,7 @@ export const GetStarted = () => {
   }
   return (
     <div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-3">
         <h1 className="text-[32px] font-bold text-black">Let’s get started</h1>
         <h3 className="text-[16px] text-graybold">
           Lorem ipsum dolar sit general sac mascho werhoLorem ipsum <br /> dolar
@@ -28,7 +28,7 @@ export const GetStarted = () => {
         <div className="lg:w-7 w-5 lg:h-7 h-5 bg-whiteLight rounded-full"></div>
       </div>
 
-      <div className="flex md:flex-row flex-col justify-center items-center gap-4 mt-6">
+      <div className="flex md:flex-row flex-col justify-center items-center gap-4 mt-6 ">
         {Stepbar.map((Stepbar, i) => (
           <GetCard key={i} {...Stepbar} />
         ))}
